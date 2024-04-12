@@ -1,7 +1,7 @@
 # Anomaly Detection Using Machine Learning: An Application to Automated Vehicle Health Monitoring
 Anomaly detection has been instrumental in identifying unusual patterns in the data which can be indicative of health deterioration of a system, potential component failure, or a random defect. Anomaly detection using machine learning techniques which represents emerging trends while retaining historical knowledge helps in continuous condition monitoring of these systems. It enables to utilize growth in technology towards better control, more reliability, and reduced downtime using proactive fault diagnosis and optimized maintenance schedules.
 
-This repository focuses on condition based health monitoring of vehicles and automatic early fault diagnosis by casting this as an anomaly detection problem. Here, the vehicle under test is equipped with five vertical acceleration sensors namely FR_LH (front left side), FR_RH (front right side), RR_LH (rear left side), RR_RH (rear right side) & Cabin. This vehicle is made to run over road surface with alternating rough & smooth patches. The data is segmented into two road surfaces (rough & smooth) along with some preliminary analysis for each of these road surfaces.  
+This repository focuses on condition based health monitoring of vehicles and automatic early fault diagnosis by casting this as an anomaly detection problem. Here, the vehicle under test is equipped with five vertical acceleration sensors namely FR_LH (front left side), FR_RH (front right side), RR_LH (rear left side), RR_RH (rear right side) & Cabin. This vehicle is made to run over road surface with alternating rough & smooth patches. The data is segmented into two road surfaces (rough & smooth) along with some preliminary analysis for each of these road surfaces.  
 
 For anomaly detection, Mahalanobis distance and Autoencoder based models are used over these segmented road surfaces. The sensor data from the known healthy vehicles
 is used to train and learn useful patterns from this healthy data which models the normal behaviour of vehicles over that surface. Thereafter, unknown vehicle data
@@ -13,7 +13,7 @@ In this experiment, anomaly detection is performed on two datasets, ”Feb” an
 The following provides details of the data and code files used for anomaly detection algorithms. Raw input data files used has been pre-processed and transformed suitably for them to be used as inputs for anomaly detection algorithms.
 •	There are two types of files: Jupyter (ipynb) notebooks and csv files.
 	o	All the ipynb files consists of python code files written for specific tasks as indicated in the nomenclature of each file.
-	o	Some of the csv files are used as input data files and the others are used to save output data.  
+	o	Some of the csv files are used as input data files and the others are used to save output data.
 
 •	There are total of 6 ipynb files, each for three anomaly detection approaches (Multiple Sensor Mahalanobis Distance, Single Sensor Mahalanobis Distance & Autoencoder) used over two road surfaces (Smooth & Rough).
 	o	Anomaly_Detection_Smooth_PCA_Mahalanobis_Distance_Multiple_Sensor_Approach – Multiple senor Mahalanobis distance model training and testing with feature engineering & feature selection over smooth road surface.
