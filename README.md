@@ -11,12 +11,12 @@ anomaly in the test data assuming these deviating patterns in the data are a res
 In this experiment, anomaly detection is performed on two datasets, ”Feb” and ”March”, belonging to the same vehicle which are segmented into rough surface data and smooth surface data. One of them, the ”Feb” dataset is confirmed to be from the healthy vehicle. The ”March” dataset is known to have anomalies as a breakdown occurred in the front part of the vehicle while this dataset was recorded. So it is expected that unusual patterns reflecting breakdown might have been captured in the raw vibration signals. Here, a dataset known to be from a healthy vehicle is used to train (Train Dataset) the model and the ”Feb” dataset (healthy termed as Test1 Dataset) and the ”March” dataset (unhealthy termed as Test2 Dataset) is used as test datasets.
 
 The following provides details of the data and code files used for anomaly detection algorithms. Raw input data files used has been pre-processed and transformed suitably for them to be used as inputs for anomaly detection algorithms.
-•	There are two types of files: Jupyter (ipynb) notebooks and csv files.
+There are two types of files: Jupyter (ipynb) notebooks and csv files.
 
 	o	All the ipynb files consists of python code files written for specific tasks as indicated in the nomenclature of each file.
 	o	Some of the csv files are used as input data files and the others are used to save output data.
 
-•	There are total of 6 ipynb files, each for three anomaly detection approaches (Multiple Sensor Mahalanobis Distance, Single Sensor Mahalanobis Distance & Autoencoder) used over two road surfaces (Smooth & Rough).
+There are total of 6 ipynb files, each for three anomaly detection approaches (Multiple Sensor Mahalanobis Distance, Single Sensor Mahalanobis Distance & Autoencoder) used over two road surfaces (Smooth & Rough).
 
  	o	Anomaly_Detection_Smooth_PCA_Mahalanobis_Distance_Multiple_Sensor_Approach – Multiple senor Mahalanobis distance model training and testing with feature engineering & feature selection over smooth road surface.
 	o	Anomaly_Detection_Rough_PCA_Mahalanobis_Distance_Multiple_Sensor_Approach – Multiple senor Mahalanobis distance model training and testing with feature engineering & feature selection over rough road surface.
@@ -25,7 +25,7 @@ The following provides details of the data and code files used for anomaly detec
 	o	Anomaly_Detection_Smooth_Multivariate_Autoencoder – Autoencoder model training and testing over smooth road surface.
 	o	Anomaly_Detection_Rough_Multivariate_Autoencoder – Autoencoder model training and testing over rough road surface.
 
-•	Out of all the csv files, 6 files are used as input files (Input_Data_Files) to our above explained notebooks.
+Out of all the csv files, 6 files are used as input files (Input_Data_Files) to our above explained notebooks.
 	
  	o	SmoothDataTrain - Training vertical acceleration sensors input data from distinct subset of Feb vehicle over smooth road surface (Train)
 	o	SmoothDataTest_Feb - Testing vertical acceleration sensors input data from Feb vehicle (healthy) over smooth road surface (Test1)
@@ -34,7 +34,7 @@ The following provides details of the data and code files used for anomaly detec
 	o	RoughDataTest_Feb - Testing vertical acceleration sensors input data from Feb vehicle (healthy) over rough road surface (Test1)
 	o	RoughDataTest_March – Testing vertical acceleration sensors input data from March vehicle (faulty) over rough road surface (Test2)
 
-•	Rest of the csv files are output (Output_Data_Files) from the above stated Jupyter notebooks. These are basically generated in code to finally draw a comparison between the two test sets for each of the mahalanobis distance-based anomaly detection approaches.
+Rest of the csv files are output (Output_Data_Files) from the above stated Jupyter notebooks. These are basically generated in code to finally draw a comparison between the two test sets for each of the mahalanobis distance-based anomaly detection approaches.
 	
  	o	Multivariate_MahaDist_Smooth_With PCA_Feb - Multiple sensor Mahalanobis distances calculated for Feb vehicle (healthy termed as Test1) data over smooth road surface.
 	o	Multivariate_MahaDist_Smooth_With PCA_March - Multiple sensor Mahalanobis distances calculated for March vehicle (unhealthy termed as Test2) data over smooth road surface.
