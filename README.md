@@ -10,20 +10,23 @@ anomaly in the test data assuming these deviating patterns in the data are a res
 
 In this experiment, anomaly detection is performed on two datasets, ”Feb” and ”March”, belonging to the same vehicle which are segmented into rough surface data and smooth surface data. One of them, the ”Feb” dataset is confirmed to be from the healthy vehicle. The ”March” dataset is known to have anomalies as a breakdown occurred in the front part of the vehicle while this dataset was recorded. So it is expected that unusual patterns reflecting breakdown might have been captured in the raw vibration signals. Here, a dataset known to be from a healthy vehicle is used to train (Train Dataset) the model and the ”Feb” dataset (healthy termed as Test1 Dataset) and the ”March” dataset (unhealthy termed as Test2 Dataset) are used as test datasets.
 
+The details of all the concepts used in this study along with performed experiments and their results are explained in Chapter "Anomaly Detection Using Machine Learning: An Application to Automated Vehicle Health Monitoring" as a part of a book titled "Data Science for Decision Making".
+
 The following provides details of the data and code files used for anomaly detection algorithms. Raw input data files used has been pre-processed and transformed suitably for them to be used as inputs for anomaly detection algorithms.
-There are two types of files: Jupyter (ipynb) notebooks and csv files.
+
+There are two types of files: Jupyter (ipynb) notebooks and csv files. References to respective sections of the chapter are provided below: 
 
 	o	All the ipynb files consists of python code files written for specific tasks as indicated in the nomenclature of each file.
 	o	Some of the csv files are used as input data files and the others are used to save output data.
 
 There are a total of 6 ipynb files, each for three anomaly detection approaches (Multiple Sensor Mahalanobis Distance, Single Sensor Mahalanobis Distance & Autoencoder) used over two road surfaces (Smooth & Rough).
 
- 	o	Anomaly_Detection_Smooth_PCA_Mahalanobis_Distance_Multiple_Sensor_Approach – Multiple senor Mahalanobis distance model training and testing with feature engineering & feature selection over smooth road surface.
-	o	Anomaly_Detection_Rough_PCA_Mahalanobis_Distance_Multiple_Sensor_Approach – Multiple senor Mahalanobis distance model training and testing with feature engineering & feature selection over rough road surface.
-	o	Anomaly_Detection_Smooth_Mahalanobis_Distance_Single_Sensor_Approach – Single senor Mahalanobis distance model training and testing with feature engineering over smooth road surface.
-	o	Anomaly_Detection_Rough_Mahalanobis_Distance_Single_Sensor_Approach – Single sensor Mahalanobis distance model training and testing with feature engineering over rough road surface.
-	o	Anomaly_Detection_Smooth_Multivariate_Autoencoder – Autoencoder model training and testing over smooth road surface.
-	o	Anomaly_Detection_Rough_Multivariate_Autoencoder – Autoencoder model training and testing over rough road surface.
+ 	o	Anomaly_Detection_Smooth_PCA_Mahalanobis_Distance_Multiple_Sensor_Approach – Multiple senor Mahalanobis distance model training and testing with feature engineering & feature selection over smooth road surface (Refer Section 4.1 & 5.1).
+	o	Anomaly_Detection_Rough_PCA_Mahalanobis_Distance_Multiple_Sensor_Approach – Multiple senor Mahalanobis distance model training and testing with feature engineering & feature selection over rough road surface (Refer Section 4.1 & 5.1).
+	o	Anomaly_Detection_Smooth_Mahalanobis_Distance_Single_Sensor_Approach – Single senor Mahalanobis distance model training and testing with feature engineering over smooth road surface (Refer Section 4.1 & 5.2).
+	o	Anomaly_Detection_Rough_Mahalanobis_Distance_Single_Sensor_Approach – Single sensor Mahalanobis distance model training and testing with feature engineering over rough road surface (Refer Section 4.1 & 5.2).
+	o	Anomaly_Detection_Smooth_Multivariate_Autoencoder – Autoencoder model training and testing over smooth road surface (Refer Section 4.2 & 5.3).
+	o	Anomaly_Detection_Rough_Multivariate_Autoencoder – Autoencoder model training and testing over rough road surface (Refer Section 4.2 & 5.3).
 
 Out of all the csv files, 6 files are used as input files (Input_Data_Files) to our above explained notebooks.
 	
