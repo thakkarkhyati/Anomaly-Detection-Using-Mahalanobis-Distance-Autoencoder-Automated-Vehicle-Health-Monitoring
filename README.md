@@ -14,7 +14,7 @@ The details of all the concepts used in this study along with performed experime
 
 The following provides details of the data and code files used for anomaly detection algorithms. Raw input data files used has been pre-processed and transformed suitably for them to be used as inputs for anomaly detection algorithms.
 
-There are two types of files: Jupyter (ipynb) notebooks and csv files. References to respective sections of the chapter are provided below: 
+There are two types of files: Jupyter (ipynb) notebooks and csv files. References to respective sections of the mentioned chapter are provided below: 
 
 	o	All the ipynb files consists of python code files written for specific tasks as indicated in the nomenclature of each file.
 	o	Some of the csv files are used as input data files and the others are used to save output data.
